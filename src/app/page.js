@@ -4,7 +4,7 @@ import Hero from "./pages/hero/Hero";
 
 export default function Home() {
   return (
-    <main className="rounded-l-full">
+    <main>
       <Hero/>
     </main>
   );
