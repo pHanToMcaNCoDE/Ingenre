@@ -35,11 +35,11 @@ const Hero = () => {
 
 
   return (
-    <section className='md:max-w-[1250px] lg:max-w-[1250px] md:ml-[9rem] lg:ml-[12.8rem] p-2'>
+    <section className='w-full lg:max-w-[1250px] lg:ml-[12.8rem] p-2'>
       <Navbar/>
 
       {/* Hero */}
-      <section className='bg-zinc-100 flex flex-col items-center h-screen'>
+      <section className='bg-zinc-100 flex flex-col items-center min-h-screen'>
         <div className='flex justify-center gap-x-6 items-center py-6'>
           <div>
               <Image src={icon} alt='Ingenre Logo' width={100} height={100}></Image>

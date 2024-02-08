@@ -12,7 +12,7 @@ import { FaRegUser } from "react-icons/fa6";
 
 const AsideBar = () => {
   return (
-    <aside class='h-screen md:w-[20%] lg:w-[15%] border-r border-[#000] fixed left-[-100%] md:left-0 lg:left-0'>
+    <aside class='h-screen md:w-[20%] lg:w-[15%] border-r border-[#000] fixed left-[-100%] md:left-[=100%] lg:left-0 bg-[#fff] z-20'>
        
        {/* Logo */}
         <div className='flex gap-x-3 items-center py-5 px-4'>
