@@ -6,36 +6,11 @@ import Image from 'next/image'
 import axios from 'axios'
 import Navbar from '@/app/components/Navbar';
 import Display from '@/app/components/Display';
-import Trending from '../trending/TopRanking';
 
-const Hero = () => {
-
-    const [animes, setAnimes] = useState({})
-    // const [search, setSearch] = useState({})
-
-    // Function to fetch data from api
-
-    const fetchData = async () => {
-      const response = await axios.get('https://api.jikan.moe/v4/anime')
-      
-      setAnimes(response.data)
-    }
-
-    useEffect(() => {
-        fetchData()
-    }, [])
-
-    // Function to fetch data for search
-
-    // const searchData = async () =>{
-    //     const response = await axios.get('https://api.jikan.moe/v4/anime/28/full')
-
-    //     console.log(response.data)
-    // }
-
+const Hero = ({animes}) => {
 
   return (
-    <section className='w-full lg:max-w-[1225px] lg:ml-[12.5rem] p-2'>
+    <section className='p-2'>
       <Navbar/>
 
       {/* Hero */}
@@ -51,7 +26,9 @@ const Hero = () => {
         </div>
 
         {/* Display */}
+        
         <Display animes={animes}/>
+        
       </section>
     </section>
   )
