@@ -5,6 +5,7 @@ import Genres from "./pages/genres/Genres";
 import {HashLoader} from 'react-spinners';
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Action from "./pages/action/Action";
 
 
 export default function Home() {
@@ -29,11 +30,12 @@ export default function Home() {
         <>
           <Hero animes={animes}/>
           <Genres animes={animes}/>
+          <Action animes={animes}/>
         </> 
         : 
         <div className='flex my-auto h-screen justify-center items-center gap-x-3'>
           <HashLoader className='animate-bounce px-3 py-10 h-[50vh]' color="#4fbfeb" />
-          <p className='font-mono tracking-[1rem] text-[1.2rem] text-[#555] font-bold'>LOADING...</p>
+          <p className='font-mono tracking-[.3rem] text-[1.2rem] text-[#555] font-bold'>LOADING...</p>
         </div>
       }
     </main>

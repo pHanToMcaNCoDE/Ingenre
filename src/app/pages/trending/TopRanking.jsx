@@ -53,6 +53,7 @@ const TopRanking = ({ animes }) => {
                     />
                   </div>
 
+                  {/* Overlay */}
                   <div
                     className='lg:w-[17em] duration-300 opacity-0 hover:opacity-100 absolute bg-[#000]/30 min-h-[75%] w-0 top-0'
                   ></div>
