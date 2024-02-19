@@ -1,11 +1,13 @@
 'use client';
 
-import Hero from "./pages/hero/Hero";
-import Genres from "./pages/genres/Genres";
+
+
 import {HashLoader} from 'react-spinners';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Action from "./pages/action/Action";
+import Hero from "./hero/page";
+import Genres from './genres/page';
+import Action from './action/page';
 
 
 export default function Home() {
@@ -24,7 +26,7 @@ export default function Home() {
         fetchData()
     }, [])
   return (
-    <main className="w-full lg:max-w-[1225px] lg:ml-[12.5rem]">
+    <main className="bg-zinc-900 w-full lg:max-w-[1225px] lg:ml-[12.5rem]">
       {
         loading ? 
         <>

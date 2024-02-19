@@ -1,5 +1,4 @@
-import ActionSnapScroll from '@/app/components/ActionSnapScroll';
-import { Image } from 'next/image'; // Ensure Image is imported correctly
+import ActionSnapScroll from "../components/ActionSnapScroll";
 
 const Action = ({ animes }) => {
   return (

@@ -18,6 +18,8 @@
     "react-spinners": "^0.13.8"
   },
   "devDependencies": {
+    "@types/node": "20.11.17",
+    "@types/react": "18.2.55",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
